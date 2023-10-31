@@ -2,6 +2,7 @@
 """Solving N Queens with Backtracing"""
 import sys
 
+solutions = [] # create a list to store solutions
 
 def nqueens(n, y, board):
     """
@@ -31,7 +32,7 @@ def nqueens(n, y, board):
             if y != n - 1:
                 nqueens(n, y + 1, board)
             else:
-                print(board)
+                solutions.append(board[:]) # append a copy of the solution
             del board[-1]
 
 
@@ -50,5 +51,4 @@ def main():
 
     nqueens(n, 0, [])
 
-if __name__ == '__main__':
-    main()
+    # print all solutions
