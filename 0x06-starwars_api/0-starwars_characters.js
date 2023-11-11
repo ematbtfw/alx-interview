@@ -27,3 +27,5 @@ axios.get(apiUrl)
   .catch(error => {
     console.error(`Error fetching movie details: ${error.message}`);
   });
+
+// Add a newline at the end of the file
