@@ -29,7 +29,7 @@ axios.get(apiUrl)
   });
 
 // Add a newline at the end of the file
-#!/usr/bin/node
+
 const exec = require('child_process').exec;
 
 let child = exec("timeout 60s ./0-starwars_characters.js 3", function(error, stdout, stderr) {
